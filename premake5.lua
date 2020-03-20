@@ -20,6 +20,7 @@ project "ImGui"
 	}
 
 	filter "system:linux"
+		buildoptions "-fPIC"
 		cppdialect "C++17"
 		staticruntime "On"
 
