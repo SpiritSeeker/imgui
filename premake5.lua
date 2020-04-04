@@ -21,7 +21,7 @@ project "ImGui"
 		"imgui_demo.cpp"
 	}
 
-	filter "system:linux"
+	filter { "action:gmake*", "toolset:gcc" }
 		buildoptions "-fPIC"
 
 	filter "system:windows"
